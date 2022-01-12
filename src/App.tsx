@@ -1,7 +1,8 @@
 import React from 'react';
+import Inbox from './inbox';
 
 function App() {
-  return <>Hello world</>;
+  return <Inbox />;
 }
 
 export default App;
