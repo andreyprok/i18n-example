@@ -1,4 +1,6 @@
 import React from 'react';
+import { Trans } from '@lingui/macro';
+import { Trans as TransComponent } from '@lingui/react';
 
 export default function Inbox() {
   const messages = [{}, {}];
@@ -9,17 +11,28 @@ export default function Inbox() {
     alert('Marked as read.');
   };
 
+  const name = 'Andrey';
+
   return (
     <div>
-      <h1>Message Inbox</h1>
+      {/** Trans macro do the same as Trans Component */}
+      <h1>
+        <TransComponent id="Hello {name}" values={{ name }} />
+      </h1>
+      <h1>
+        <Trans>Message Inbox</Trans>
+      </h1>
 
       <p>
-        See all <a href="/unread">unread messages</a>
-        {' or '}
-        <button type="button" onClick={markAsRead}>
-          mark them
-        </button>{' '}
-        as read.
+        {/**  it's allowed rich-text formatting inside translations. */}
+        <Trans>
+          See all <a href="/unread">unread messages</a>
+          {' or '}
+          <button type="button" onClick={markAsRead}>
+            mark them
+          </button>{' '}
+          as read.
+        </Trans>
       </p>
 
       <p>
