@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@lingui/core": "^3.13.0",
+    "@lingui/macro": "^3.13.0",
     "@lingui/react": "^3.13.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -52,7 +54,6 @@
   },
   "devDependencies": {
     "@lingui/cli": "^3.13.0",
-    "@lingui/macro": "^3.13.0",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "eslint": "^8.6.0",
