@@ -2,9 +2,13 @@ import React from 'react';
 import { i18n } from '@lingui/core';
 import { I18nProvider } from '@lingui/react';
 import Inbox from './inbox';
-import { messages } from './locales/en/messages';
+import { messages as enMessages } from './locales/en/messages';
+import { messages as csMessages } from './locales/cs/messages';
+import { messages as frMessages } from './locales/fr/messages';
 
-i18n.load('en', messages);
+i18n.load('en', enMessages);
+i18n.load('cn', csMessages);
+i18n.load('fr', frMessages);
 i18n.activate('en');
 
 function App() {
