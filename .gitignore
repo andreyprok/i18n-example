@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # lingui -  temporary message catalogs per each source file.
-src/locales/_build/
-src/locales/**/*.js
+/src/locales/_build/
+/src/locales/**/*.js

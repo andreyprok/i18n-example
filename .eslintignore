@@ -1,3 +1,3 @@
 # lingui -  temporary message catalogs per each source file.
-locales/_build/
-locales/**/*.js
+/src/locales/_build/
+/src/locales/**/*.js
