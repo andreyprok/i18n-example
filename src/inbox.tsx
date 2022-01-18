@@ -1,13 +1,15 @@
 import React from 'react';
-import { Trans } from '@lingui/macro';
-import { Trans as TransComponent } from '@lingui/react';
+import { Trans, Plural } from '@lingui/macro';
+import { Trans as TransComponent, useLingui } from '@lingui/react';
 
 export default function Inbox() {
   const messages = [{}, {}];
   const messagesCount = messages.length;
   const lastLogin = new Date();
+  const { i18n } = useLingui();
 
   const markAsRead = () => {
+    // eslint-disable-next-line no-alert
     alert('Marked as read.');
   };
 
@@ -36,12 +38,19 @@ export default function Inbox() {
       </p>
 
       <p>
-        {messagesCount === 1
-          ? `There's ${messagesCount} message in your inbox.`
-          : `There are ${messagesCount} messages in your inbox.`}
+        <Plural
+          value={messagesCount}
+          _0="There are no messages"
+          one={`There's # message in your inbox, ${name}`}
+          other={
+            <Trans>
+              There are <strong>#</strong> messages in your inbox, {name}
+            </Trans>
+          }
+        />
       </p>
 
-      <footer>Last login on {lastLogin.toLocaleDateString()}.</footer>
+      <footer>Last login on {i18n.date(lastLogin)}.</footer>
     </div>
   );
 }
