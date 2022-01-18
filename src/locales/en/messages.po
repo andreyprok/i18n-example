@@ -13,6 +13,50 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/inbox.tsx:20
+#: src/inbox.tsx:119
+msgid "Cancelled"
+msgstr "Cancelled"
+
+#: src/inbox.tsx:118
+msgid "Closed"
+msgstr "Closed"
+
+#: src/inbox.tsx:120
+msgid "Completed"
+msgstr "Completed"
+
+#: src/inbox.tsx:10
+msgid "Green"
+msgstr "Green"
+
+#: src/inbox.tsx:38
 msgid "Hello {name}"
 msgstr "Hello {name}"
+
+#: src/inbox.tsx:104
+msgid "I'm so happy!"
+msgstr "I'm so happy!"
+
+#: src/inbox.tsx:105
+msgid "I'm so sad."
+msgstr "I'm so sad."
+
+#: src/inbox.tsx:22
+msgid "Marked as read."
+msgstr "Marked as read."
+
+#: src/inbox.tsx:117
+msgid "Open"
+msgstr "Open"
+
+#: src/inbox.tsx:8
+msgid "Orange"
+msgstr "Orange"
+
+#: src/inbox.tsx:7
+msgid "Red"
+msgstr "Red"
+
+#: src/inbox.tsx:9
+msgid "Yellow"
+msgstr "Yellow"
