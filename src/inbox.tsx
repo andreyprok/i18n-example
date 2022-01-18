@@ -1,6 +1,14 @@
 import React from 'react';
-import { Trans, Plural } from '@lingui/macro';
+import { Trans, Plural, t, defineMessage } from '@lingui/macro';
 import { Trans as TransComponent, useLingui } from '@lingui/react';
+
+// Lazy translations
+const favoriteColors = [
+  defineMessage({ message: 'Red' }),
+  defineMessage({ message: 'Orange' }),
+  defineMessage({ message: 'Yellow' }),
+  defineMessage({ message: 'Green' }),
+];
 
 export default function Inbox() {
   const messages = [{}, {}];
@@ -9,14 +17,22 @@ export default function Inbox() {
   const { i18n } = useLingui();
 
   const markAsRead = () => {
+    // use t as if you were inside a React component
     // eslint-disable-next-line no-alert
-    alert('Marked as read.');
+    alert(t`Marked as read.`);
+  };
+
+  const getTranslatedColorNames = () => {
+    //  a string-only translation (of lazy translations)
+    return favoriteColors.map((color) => i18n._(color));
   };
 
   const name = 'Andrey';
 
   return (
     <div>
+      {getTranslatedColorNames()}
+
       {/** Trans macro do the same as Trans Component */}
       <h1>
         <TransComponent id="Hello {name}" values={{ name }} />
@@ -51,6 +67,71 @@ export default function Inbox() {
       </p>
 
       <footer>Last login on {i18n.date(lastLogin)}.</footer>
+
+      <ul>
+        {favoriteColors.map((color) => (
+          <li>
+            <Trans id={color.id} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+// t’s often convenient to pass messages around as component props
+function FancyButton({ label }: { label: string | JSX.Element }) {
+  return <button type="button">{label}</button>;
+}
+
+export function LoginLogoutButtons() {
+  return (
+    <div>
+      <FancyButton label={<Trans>Log in</Trans>} />
+      <FancyButton label={<Trans>Log out</Trans>} />
+    </div>
+  );
+}
+
+// If you need the prop to be displayed as a string-only translation, you can pass a message tagged with the t macro
+function ImageWithCaption({ caption }: { caption: string }) {
+  return <img src="..." alt={caption} />;
+}
+
+export function HappySad() {
+  return (
+    <div>
+      <ImageWithCaption caption={t`I'm so happy!`} />
+      <ImageWithCaption caption={t`I'm so sad.`} />
+    </div>
+  );
+}
+
+// Picking a message based on a variable
+const STATUS_OPEN = 1;
+const STATUS_CLOSED = 2;
+const STATUS_CANCELLED = 4;
+const STATUS_COMPLETED = 8;
+
+const statusMessages = {
+  [STATUS_OPEN]: defineMessage({ message: 'Open' }),
+  [STATUS_CLOSED]: defineMessage({ message: 'Closed' }),
+  [STATUS_CANCELLED]: defineMessage({ message: 'Cancelled' }),
+  [STATUS_COMPLETED]: defineMessage({ message: 'Completed' }),
+};
+
+export function StatusDisplay({
+  statusCode,
+}: {
+  statusCode:
+    | typeof STATUS_OPEN
+    | typeof STATUS_CLOSED
+    | typeof STATUS_CANCELLED
+    | typeof STATUS_COMPLETED;
+}) {
+  return (
+    <div>
+      <Trans id={statusMessages[statusCode].id} />
     </div>
   );
 }
