@@ -5,5 +5,9 @@
       "path": "src/locales/{locale}/messages",
       "include": ["src"]
    }],
-   "format": "po"
+   "format": "po",
+   "service": {
+      "name": "TranslationIO",
+      "apiKey": "683e80d56e22473380bf73931b24708b"
+    }
 }

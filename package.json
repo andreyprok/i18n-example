@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "@translation/lingui": "^1.0.0",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.19",
     "@types/react": "^17.0.38",
@@ -29,7 +30,9 @@
     "lint:fix": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
     "extract": "lingui extract --clean",
     "compile:strict": "lingui compile --strict",
-    "compile": "lingui compile"
+    "compile": "lingui compile --typescript",
+    "sync": "lingui extract --overwrite && lingui compile --typescript",
+    "sync_and_purge": "lingui extract --overwrite --clean && lingui compile --typescript"
   },
   "husky": {
     "hooks": {
@@ -39,6 +42,7 @@
   "lint-staged": {
     "*.(js|jsx|ts|tsx)": [
       "npm run lint:fix",
+      "npm run sync",
       "git add"
     ]
   },
