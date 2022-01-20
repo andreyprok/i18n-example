@@ -31,18 +31,17 @@
     "extract": "lingui extract --clean",
     "compile:strict": "lingui compile --strict",
     "compile": "lingui compile --typescript",
-    "sync": "lingui extract --overwrite && lingui compile --typescript",
-    "sync_and_purge": "lingui extract --overwrite --clean && lingui compile --typescript"
+    "sync": "lingui extract --overwrite && lingui compile",
+    "sync_and_purge": "lingui extract --overwrite --clean && lingui compile"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lingui extract --overwrite && lingui compile"
     }
   },
   "lint-staged": {
     "*.(js|jsx|ts|tsx)": [
       "npm run lint:fix",
-      "npm run sync",
       "git add"
     ]
   },
