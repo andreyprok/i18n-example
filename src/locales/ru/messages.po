@@ -1,17 +1,11 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2022-01-19 12:36+0300\n"
+"POT-Creation-Date: 2022-01-20 21:56+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: ru\n"
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Plural-Forms: \n"
 
 #: src/inbox.tsx:117
 msgid "Cancelled"
@@ -27,11 +21,11 @@ msgstr "Завершенный"
 
 #: src/i18n-service/i18n-service-types.ts:21
 msgid "English"
-msgstr ""
+msgstr "английский"
 
 #: src/i18n-service/i18n-service-types.ts:22
 msgid "French"
-msgstr ""
+msgstr "Французский"
 
 #: src/inbox.tsx:10
 msgid "Green"
@@ -47,7 +41,7 @@ msgstr "Мне так грустно."
 
 #: src/i18n-service/i18n-service-types.ts:23
 msgid "Italian"
-msgstr ""
+msgstr "Итальянский"
 
 #: src/inbox.tsx:88
 msgid "Log in"
@@ -58,8 +52,8 @@ msgid "Log out"
 msgstr "Выйти"
 
 #: src/inbox.tsx:22
-msgid "Marked as read."
-msgstr "Отмечено как прочитанное."
+msgid "Mails are marked as read."
+msgstr "Сообщения помечаются как прочитанные."
 
 #: src/inbox.tsx:37
 msgid "My Message Inbox"
@@ -79,7 +73,7 @@ msgstr "открыто"
 
 #: src/inbox.tsx:8
 msgid "Orange"
-msgstr "апельсин"
+msgstr "Оранжевый"
 
 #: src/inbox.tsx:7
 msgid "Red"
@@ -87,7 +81,7 @@ msgstr "красный"
 
 #: src/i18n-service/i18n-service-types.ts:24
 msgid "Russian"
-msgstr ""
+msgstr "русский"
 
 #: src/inbox.tsx:44
 msgid "See all <0>unread messages</0>or <1>mark them</1> as read."
@@ -103,4 +97,4 @@ msgstr "{ messagesCount, plural, =0 {Нет сообщений} one {В папк
 
 #: src/i18n-service/i18n-service-types.ts:20
 msgid "Сzech"
-msgstr ""
+msgstr "чешский"

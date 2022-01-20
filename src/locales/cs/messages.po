@@ -1,17 +1,11 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2022-01-19 12:36+0300\n"
+"POT-Creation-Date: 2022-01-20 21:56+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: cs\n"
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Plural-Forms: \n"
 
 #: src/inbox.tsx:117
 msgid "Cancelled"
@@ -27,11 +21,11 @@ msgstr "Dokončeno"
 
 #: src/i18n-service/i18n-service-types.ts:21
 msgid "English"
-msgstr ""
+msgstr "Angličtina"
 
 #: src/i18n-service/i18n-service-types.ts:22
 msgid "French"
-msgstr ""
+msgstr "francouzština"
 
 #: src/inbox.tsx:10
 msgid "Green"
@@ -47,7 +41,7 @@ msgstr "Jsem tak smutný."
 
 #: src/i18n-service/i18n-service-types.ts:23
 msgid "Italian"
-msgstr ""
+msgstr "italština"
 
 #: src/inbox.tsx:88
 msgid "Log in"
@@ -58,8 +52,8 @@ msgid "Log out"
 msgstr "Odhlásit se"
 
 #: src/inbox.tsx:22
-msgid "Marked as read."
-msgstr "Označeno jako přečtené."
+msgid "Mails are marked as read."
+msgstr "E-maily jsou označeny jako přečtené."
 
 #: src/inbox.tsx:37
 msgid "My Message Inbox"
@@ -87,7 +81,7 @@ msgstr "Červené"
 
 #: src/i18n-service/i18n-service-types.ts:24
 msgid "Russian"
-msgstr ""
+msgstr "ruština"
 
 #: src/inbox.tsx:44
 msgid "See all <0>unread messages</0>or <1>mark them</1> as read."
@@ -103,4 +97,4 @@ msgstr "{ messagesCount, plural, =0 {Nejsou žádné zprávy} one {Ve vaší dor
 
 #: src/i18n-service/i18n-service-types.ts:20
 msgid "Сzech"
-msgstr ""
+msgstr "česky"

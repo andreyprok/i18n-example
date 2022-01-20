@@ -58,8 +58,12 @@ msgid "Log out"
 msgstr "Log out"
 
 #: src/inbox.tsx:22
-msgid "Marked as read."
-msgstr "Marked as read."
+msgid "Mails are marked as read."
+msgstr "Mails are marked as read."
+
+#: src/inbox.tsx:22
+#~ msgid "Marked as read."
+#~ msgstr "Marked as read."
 
 #: src/inbox.tsx:37
 msgid "My Message Inbox"
