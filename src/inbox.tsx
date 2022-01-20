@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans, Plural, t, defineMessage } from '@lingui/macro';
-import { Trans as TransComponent, useLingui } from '@lingui/react';
+import { useLingui } from '@lingui/react';
 
 // Lazy translations
 const favoriteColors = [
@@ -19,7 +19,7 @@ export default function Inbox() {
   const markAsRead = () => {
     // use t as if you were inside a React component
     // eslint-disable-next-line no-alert
-    alert(t`Marked as read.`);
+    alert(t`Mails are marked as read.`);
   };
 
   const getTranslatedColorNames = () => {
@@ -33,12 +33,10 @@ export default function Inbox() {
     <div>
       {getTranslatedColorNames()}
 
-      {/** Trans macro do the same as Trans Component */}
       <h1>
-        <TransComponent id="Hello {name}" values={{ name }} />
-      </h1>
-      <h1>
-        <Trans>Message Inbox</Trans>
+        <Trans>My Message Inbox</Trans>
+        <Trans>My super inbox</Trans>
+        <Trans>My super super inbox</Trans>
       </h1>
 
       <p>
