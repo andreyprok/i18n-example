@@ -4,3 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 node version: 17.3.0 
 
+ # Added storybook with eslint plugin
+ sb init
+ /eslint-plugin-storybook#readme 

@@ -18,7 +18,8 @@
   "rules": {
     "prettier/prettier": "error",
     "arrow-body-style": "off",
-    "prefer-arrow-callback": "off"
+    "prefer-arrow-callback": "off",
+    "react/require-default-props": "off"
   },
   "overrides": [
     {
@@ -26,7 +27,8 @@
         "**/*.stories.*"
       ],
       "rules": {
-        "import/no-anonymous-default-export": "off"
+        "import/no-anonymous-default-export": "off",
+        "import/no-extraneous-dependencies": "off"
       }
     }
   ]
