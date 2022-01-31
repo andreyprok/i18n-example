@@ -1,21 +1,21 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2022-01-20 21:56+0300\n"
+"POT-Creation-Date: 2022-01-26 02:13+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: it\n"
 
-#: src/inbox.tsx:117
+#: src/inbox.tsx:123
 msgid "Cancelled"
 msgstr "Annullato"
 
-#: src/inbox.tsx:116
+#: src/inbox.tsx:122
 msgid "Closed"
 msgstr "Chiuso"
 
-#: src/inbox.tsx:118
+#: src/inbox.tsx:124
 msgid "Completed"
 msgstr "Completato"
 
@@ -31,11 +31,11 @@ msgstr "francese"
 msgid "Green"
 msgstr "verde"
 
-#: src/inbox.tsx:102
+#: src/inbox.tsx:108
 msgid "I'm so happy!"
 msgstr "Sono così felice!"
 
-#: src/inbox.tsx:103
+#: src/inbox.tsx:109
 msgid "I'm so sad."
 msgstr "Sono così triste."
 
@@ -43,21 +43,25 @@ msgstr "Sono così triste."
 msgid "Italian"
 msgstr "italiano"
 
-#: src/inbox.tsx:88
+#: src/inbox.tsx:94
 msgid "Log in"
 msgstr "Accesso"
 
-#: src/inbox.tsx:89
+#: src/inbox.tsx:95
 msgid "Log out"
 msgstr "Disconnettersi"
 
-#: src/inbox.tsx:22
+#: src/inbox.tsx:21
 msgid "Mails are marked as read."
 msgstr "Le e-mail sono contrassegnate come lette."
 
 #: src/inbox.tsx:37
 msgid "My Message Inbox"
 msgstr "La mia casella di posta"
+
+#: src/inbox.tsx:36
+msgid "My Message Inbox Two"
+msgstr "La mia casella di posta due"
 
 #: src/inbox.tsx:38
 msgid "My super inbox"
@@ -67,7 +71,7 @@ msgstr "La mia super casella di posta"
 msgid "My super super inbox"
 msgstr "La mia super super casella di posta"
 
-#: src/inbox.tsx:115
+#: src/inbox.tsx:121
 msgid "Open"
 msgstr "aperto"
 
@@ -83,7 +87,7 @@ msgstr "Rosso"
 msgid "Russian"
 msgstr "russo"
 
-#: src/inbox.tsx:44
+#: src/inbox.tsx:43
 msgid "See all <0>unread messages</0>or <1>mark them</1> as read."
 msgstr "Vedi tutti i <0>messaggi non letti</0> o <1>segnali</1> come letto."
 
@@ -91,7 +95,7 @@ msgstr "Vedi tutti i <0>messaggi non letti</0> o <1>segnali</1> come letto."
 msgid "Yellow"
 msgstr "Giallo"
 
-#: src/inbox.tsx:55
+#: src/inbox.tsx:53
 msgid "{messagesCount, plural, =0 {There are no messages} one {There's # message in your inbox, {name}} other { There are <0>#</0> messages in your inbox, {name}}}"
 msgstr "{ messagesCount, plural, =0 {Non ci sono messaggi} one {C''è un messaggio # nella tua casella di posta, {name}} other {Ci sono <0>#</0> messaggi nella tua casella di posta, {name}} }"
 

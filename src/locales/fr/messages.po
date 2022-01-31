@@ -1,21 +1,21 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2022-01-20 21:56+0300\n"
+"POT-Creation-Date: 2022-01-26 02:13+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: fr\n"
 
-#: src/inbox.tsx:117
+#: src/inbox.tsx:123
 msgid "Cancelled"
 msgstr ""
 
-#: src/inbox.tsx:116
+#: src/inbox.tsx:122
 msgid "Closed"
 msgstr "Fermé"
 
-#: src/inbox.tsx:118
+#: src/inbox.tsx:124
 msgid "Completed"
 msgstr "Complété"
 
@@ -31,11 +31,11 @@ msgstr ""
 msgid "Green"
 msgstr "vert"
 
-#: src/inbox.tsx:102
+#: src/inbox.tsx:108
 msgid "I'm so happy!"
 msgstr "Je suis tellement heureux!"
 
-#: src/inbox.tsx:103
+#: src/inbox.tsx:109
 msgid "I'm so sad."
 msgstr ""
 
@@ -43,20 +43,24 @@ msgstr ""
 msgid "Italian"
 msgstr ""
 
-#: src/inbox.tsx:88
+#: src/inbox.tsx:94
 msgid "Log in"
 msgstr ""
 
-#: src/inbox.tsx:89
+#: src/inbox.tsx:95
 msgid "Log out"
 msgstr ""
 
-#: src/inbox.tsx:22
+#: src/inbox.tsx:21
 msgid "Mails are marked as read."
 msgstr ""
 
 #: src/inbox.tsx:37
 msgid "My Message Inbox"
+msgstr ""
+
+#: src/inbox.tsx:36
+msgid "My Message Inbox Two"
 msgstr ""
 
 #: src/inbox.tsx:38
@@ -67,7 +71,7 @@ msgstr ""
 msgid "My super super inbox"
 msgstr ""
 
-#: src/inbox.tsx:115
+#: src/inbox.tsx:121
 msgid "Open"
 msgstr ""
 
@@ -83,7 +87,7 @@ msgstr ""
 msgid "Russian"
 msgstr ""
 
-#: src/inbox.tsx:44
+#: src/inbox.tsx:43
 msgid "See all <0>unread messages</0>or <1>mark them</1> as read."
 msgstr "Voir tous les <0>messages non lus</0> ou <1>marquez-les</1> comme lu."
 
@@ -91,7 +95,7 @@ msgstr "Voir tous les <0>messages non lus</0> ou <1>marquez-les</1> comme lu."
 msgid "Yellow"
 msgstr ""
 
-#: src/inbox.tsx:55
+#: src/inbox.tsx:53
 msgid "{messagesCount, plural, =0 {There are no messages} one {There's # message in your inbox, {name}} other { There are <0>#</0> messages in your inbox, {name}}}"
 msgstr ""
 
