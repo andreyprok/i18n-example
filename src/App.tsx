@@ -1,29 +1,37 @@
 import React from 'react';
-import { i18n } from '@lingui/core';
-import { I18nProvider } from '@lingui/react';
-import { en, cs, fr } from 'make-plural/plurals';
+import { detect, fromNavigator } from '@lingui/detect-locale';
+import { i18nCustomService } from './i18n-service/i18n-service';
+import I18nServiceProvider from './i18n-service/i18n-service-context';
 import Inbox from './inbox';
-import { messages as enMessages } from './locales/en/messages';
-import { messages as csMessages } from './locales/cs/messages';
-import { messages as frMessages } from './locales/fr/messages';
+import { defaultLanguageCode } from './i18n-service/i18n-service-types';
+// import { en, cs, fr } from 'make-plural/plurals';
+// import Inbox from './inbox';
+// import I18nServiceProvider from './i18n-service/i18n-service-context';
+// import { messages as enMessages } from './locales/en/messages';
+// import { messages as ruMessages } from './locales/ru/messages';
+// import { messages as frMessages } from './locales/fr/messages';
+// import { defaultLanguageCode } from './i18n-service/i18n-service-types';
+// import { i18nCustomService } from './i18n-service/i18n-service';
 
-i18n.loadLocaleData({
-  en: { plurals: en },
-  cs: { plurals: cs },
-  fr: { plurals: fr },
-});
+// i18n.loadLocaleData({
+//   en: { plurals: en },
+//   cs: { plurals: cs },
+//   fr: { plurals: fr },
+// });
 
-i18n.load('en', enMessages);
-i18n.load('cn', csMessages);
-i18n.load('fr', frMessages);
+// i18n.load('en', enMessages);
+// i18n.load('ru', ruMessages);
+// i18n.load('fr', frMessages);
 
-i18n.activate('en');
+const currentLangCode = detect(fromNavigator(), defaultLanguageCode) ?? defaultLanguageCode;
 
+// i18n.activate(currentLangCode ?? defaultLanguageCode);
 function App() {
+  // console.log(`Yande xMetrika trackPage has been fired with`);
   return (
-    <I18nProvider i18n={i18n}>
+    <I18nServiceProvider service={i18nCustomService} defaultLangCode={currentLangCode}>
       <Inbox />
-    </I18nProvider>
+    </I18nServiceProvider>
   );
 }
 

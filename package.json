@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@lingui/core": "^3.13.0",
+    "@lingui/detect-locale": "^3.13.0",
     "@lingui/macro": "^3.13.0",
     "@lingui/react": "^3.13.0",
     "@testing-library/jest-dom": "^5.16.1",
@@ -29,14 +30,15 @@
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
     "extract": "lingui extract --clean",
+    "extract:stated": "lingui extract $(git diff --name-only --staged)",
     "compile:strict": "lingui compile --strict",
-    "compile": "lingui compile --typescript",
+    "compile": "lingui compile",
     "sync": "lingui extract --overwrite && lingui compile",
     "sync_and_purge": "lingui extract --overwrite --clean && lingui compile"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lingui extract --overwrite && lingui compile"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {

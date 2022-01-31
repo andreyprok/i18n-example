@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans, Plural, t, defineMessage } from '@lingui/macro';
-import { useLingui } from '@lingui/react';
+import { useI18nService } from './i18n-service/i18n-service-context';
 
 // Lazy translations
 const favoriteColors = [
@@ -14,12 +14,12 @@ export default function Inbox() {
   const messages = [{}, {}];
   const messagesCount = messages.length;
   const lastLogin = new Date();
-  const { i18n } = useLingui();
-
+  const { langList, switchLang, i18n } = useI18nService();
   const markAsRead = () => {
     // use t as if you were inside a React component
     // eslint-disable-next-line no-alert
     alert(t`Mails are marked as read.`);
+    // i18n.activate('ru');
   };
 
   const getTranslatedColorNames = () => {
@@ -31,14 +31,14 @@ export default function Inbox() {
 
   return (
     <div>
+      <Trans>My Message Inbox Thre</Trans>
       {getTranslatedColorNames()}
-
       <h1>
+        <Trans>My Message Inbox Two</Trans>
         <Trans>My Message Inbox</Trans>
         <Trans>My super inbox</Trans>
         <Trans>My super super inbox</Trans>
       </h1>
-
       <p>
         {/**  it's allowed rich-text formatting inside translations. */}
         <Trans>
@@ -50,7 +50,6 @@ export default function Inbox() {
           as read.
         </Trans>
       </p>
-
       <p>
         <Plural
           value={messagesCount}
@@ -63,13 +62,21 @@ export default function Inbox() {
           }
         />
       </p>
-
       <footer>Last login on {i18n.date(lastLogin)}.</footer>
-
       <ul>
         {favoriteColors.map((color) => (
-          <li>
+          <li key={color.id}>
             <Trans id={color.id} />
+          </li>
+        ))}
+      </ul>
+      <hr />
+      <ul>
+        {Object.keys(langList()).map((key) => (
+          <li key={key}>
+            <button type="button" onClick={() => switchLang(key)}>
+              {langList()[key]}
+            </button>
           </li>
         ))}
       </ul>
