@@ -87,17 +87,5 @@
     "lint-staged": "^12.1.7",
     "prettier": "2.5.1",
     "webpack": "^5.67.0"
-  },
-  "eslintConfig": {
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
   }
 }
