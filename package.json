@@ -34,7 +34,9 @@
     "compile:strict": "lingui compile --strict",
     "compile": "lingui compile",
     "sync": "lingui extract --overwrite && lingui compile",
-    "sync_and_purge": "lingui extract --overwrite --clean && lingui compile"
+    "sync_and_purge": "lingui extract --overwrite --clean && lingui compile",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "husky": {
     "hooks": {
@@ -61,6 +63,14 @@
   },
   "devDependencies": {
     "@lingui/cli": "^3.13.0",
+    "@storybook/addon-actions": "^6.4.17",
+    "@storybook/addon-essentials": "^6.4.17",
+    "@storybook/addon-links": "^6.4.17",
+    "@storybook/builder-webpack5": "^6.4.17",
+    "@storybook/manager-webpack5": "^6.4.17",
+    "@storybook/node-logger": "^6.4.17",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.4.17",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
     "eslint": "^8.6.0",
@@ -72,8 +82,22 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.5.6",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.7",
-    "prettier": "2.5.1"
+    "prettier": "2.5.1",
+    "webpack": "^5.67.0"
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   }
 }
