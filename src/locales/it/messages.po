@@ -1,21 +1,21 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2022-01-26 02:13+0300\n"
+"POT-Creation-Date: 2022-01-31 19:50+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: it\n"
 
-#: src/inbox.tsx:123
+#: src/inbox.tsx:124
 msgid "Cancelled"
 msgstr "Annullato"
 
-#: src/inbox.tsx:122
+#: src/inbox.tsx:123
 msgid "Closed"
 msgstr "Chiuso"
 
-#: src/inbox.tsx:124
+#: src/inbox.tsx:125
 msgid "Completed"
 msgstr "Completato"
 
@@ -31,11 +31,11 @@ msgstr "francese"
 msgid "Green"
 msgstr "verde"
 
-#: src/inbox.tsx:108
+#: src/inbox.tsx:109
 msgid "I'm so happy!"
 msgstr "Sono così felice!"
 
-#: src/inbox.tsx:109
+#: src/inbox.tsx:110
 msgid "I'm so sad."
 msgstr "Sono così triste."
 
@@ -43,11 +43,15 @@ msgstr "Sono così triste."
 msgid "Italian"
 msgstr "italiano"
 
-#: src/inbox.tsx:94
+#: src/components/label/label.tsx:16
+msgid "Label"
+msgstr "Etichetta"
+
+#: src/inbox.tsx:95
 msgid "Log in"
 msgstr "Accesso"
 
-#: src/inbox.tsx:95
+#: src/inbox.tsx:96
 msgid "Log out"
 msgstr "Disconnettersi"
 
@@ -55,23 +59,27 @@ msgstr "Disconnettersi"
 msgid "Mails are marked as read."
 msgstr "Le e-mail sono contrassegnate come lette."
 
-#: src/inbox.tsx:37
+#: src/inbox.tsx:38
 msgid "My Message Inbox"
 msgstr "La mia casella di posta"
 
-#: src/inbox.tsx:36
+#: src/inbox.tsx:34
+msgid "My Message Inbox Thre"
+msgstr "Il mio messaggio Inbox Thre"
+
+#: src/inbox.tsx:37
 msgid "My Message Inbox Two"
 msgstr "La mia casella di posta due"
 
-#: src/inbox.tsx:38
+#: src/inbox.tsx:39
 msgid "My super inbox"
 msgstr "La mia super casella di posta"
 
-#: src/inbox.tsx:39
+#: src/inbox.tsx:40
 msgid "My super super inbox"
 msgstr "La mia super super casella di posta"
 
-#: src/inbox.tsx:121
+#: src/inbox.tsx:122
 msgid "Open"
 msgstr "aperto"
 
@@ -87,7 +95,7 @@ msgstr "Rosso"
 msgid "Russian"
 msgstr "russo"
 
-#: src/inbox.tsx:43
+#: src/inbox.tsx:44
 msgid "See all <0>unread messages</0>or <1>mark them</1> as read."
 msgstr "Vedi tutti i <0>messaggi non letti</0> o <1>segnali</1> come letto."
 
@@ -95,7 +103,7 @@ msgstr "Vedi tutti i <0>messaggi non letti</0> o <1>segnali</1> come letto."
 msgid "Yellow"
 msgstr "Giallo"
 
-#: src/inbox.tsx:53
+#: src/inbox.tsx:54
 msgid "{messagesCount, plural, =0 {There are no messages} one {There's # message in your inbox, {name}} other { There are <0>#</0> messages in your inbox, {name}}}"
 msgstr "{ messagesCount, plural, =0 {Non ci sono messaggi} one {C''è un messaggio # nella tua casella di posta, {name}} other {Ci sono <0>#</0> messaggi nella tua casella di posta, {name}} }"
 

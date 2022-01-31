@@ -13,15 +13,15 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/inbox.tsx:123
+#: src/inbox.tsx:124
 msgid "Cancelled"
 msgstr "Cancelled"
 
-#: src/inbox.tsx:122
+#: src/inbox.tsx:123
 msgid "Closed"
 msgstr "Closed"
 
-#: src/inbox.tsx:124
+#: src/inbox.tsx:125
 msgid "Completed"
 msgstr "Completed"
 
@@ -37,11 +37,11 @@ msgstr "French"
 msgid "Green"
 msgstr "Green"
 
-#: src/inbox.tsx:108
+#: src/inbox.tsx:109
 msgid "I'm so happy!"
 msgstr "I'm so happy!"
 
-#: src/inbox.tsx:109
+#: src/inbox.tsx:110
 msgid "I'm so sad."
 msgstr "I'm so sad."
 
@@ -49,11 +49,15 @@ msgstr "I'm so sad."
 msgid "Italian"
 msgstr "Italian"
 
-#: src/inbox.tsx:94
+#: src/components/label/label.tsx:16
+msgid "Label"
+msgstr "Label"
+
+#: src/inbox.tsx:95
 msgid "Log in"
 msgstr "Log in"
 
-#: src/inbox.tsx:95
+#: src/inbox.tsx:96
 msgid "Log out"
 msgstr "Log out"
 
@@ -61,23 +65,27 @@ msgstr "Log out"
 msgid "Mails are marked as read."
 msgstr "Mails are marked as read."
 
-#: src/inbox.tsx:37
+#: src/inbox.tsx:38
 msgid "My Message Inbox"
 msgstr "My Message Inbox"
 
-#: src/inbox.tsx:36
+#: src/inbox.tsx:34
+msgid "My Message Inbox Thre"
+msgstr "My Message Inbox Thre"
+
+#: src/inbox.tsx:37
 msgid "My Message Inbox Two"
 msgstr "My Message Inbox Two"
 
-#: src/inbox.tsx:38
+#: src/inbox.tsx:39
 msgid "My super inbox"
 msgstr "My super inbox"
 
-#: src/inbox.tsx:39
+#: src/inbox.tsx:40
 msgid "My super super inbox"
 msgstr "My super super inbox"
 
-#: src/inbox.tsx:121
+#: src/inbox.tsx:122
 msgid "Open"
 msgstr "Open"
 
@@ -93,7 +101,7 @@ msgstr "Red"
 msgid "Russian"
 msgstr "Russian"
 
-#: src/inbox.tsx:43
+#: src/inbox.tsx:44
 msgid "See all <0>unread messages</0>or <1>mark them</1> as read."
 msgstr "See all <0>unread messages</0>or <1>mark them</1> as read."
 
@@ -101,7 +109,7 @@ msgstr "See all <0>unread messages</0>or <1>mark them</1> as read."
 msgid "Yellow"
 msgstr "Yellow"
 
-#: src/inbox.tsx:53
+#: src/inbox.tsx:54
 msgid "{messagesCount, plural, =0 {There are no messages} one {There's # message in your inbox, {name}} other { There are <0>#</0> messages in your inbox, {name}}}"
 msgstr "{messagesCount, plural, =0 {There are no messages} one {There's # message in your inbox, {name}} other { There are <0>#</0> messages in your inbox, {name}}}"
 

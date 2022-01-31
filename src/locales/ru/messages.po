@@ -1,21 +1,21 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2022-01-26 02:13+0300\n"
+"POT-Creation-Date: 2022-01-31 19:50+0300\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: ru\n"
 
-#: src/inbox.tsx:123
+#: src/inbox.tsx:124
 msgid "Cancelled"
 msgstr "отменен"
 
-#: src/inbox.tsx:122
+#: src/inbox.tsx:123
 msgid "Closed"
 msgstr "Закрыто"
 
-#: src/inbox.tsx:124
+#: src/inbox.tsx:125
 msgid "Completed"
 msgstr "Завершенный"
 
@@ -31,11 +31,11 @@ msgstr "Французский"
 msgid "Green"
 msgstr "Зеленый"
 
-#: src/inbox.tsx:108
+#: src/inbox.tsx:109
 msgid "I'm so happy!"
 msgstr "Я очень счастлив!"
 
-#: src/inbox.tsx:109
+#: src/inbox.tsx:110
 msgid "I'm so sad."
 msgstr "Мне так грустно."
 
@@ -43,11 +43,15 @@ msgstr "Мне так грустно."
 msgid "Italian"
 msgstr "Итальянский"
 
-#: src/inbox.tsx:94
+#: src/components/label/label.tsx:16
+msgid "Label"
+msgstr "Этикетка"
+
+#: src/inbox.tsx:95
 msgid "Log in"
 msgstr "Авторизоваться"
 
-#: src/inbox.tsx:95
+#: src/inbox.tsx:96
 msgid "Log out"
 msgstr "Выйти"
 
@@ -55,23 +59,27 @@ msgstr "Выйти"
 msgid "Mails are marked as read."
 msgstr "Сообщения помечаются как прочитанные."
 
-#: src/inbox.tsx:37
+#: src/inbox.tsx:38
 msgid "My Message Inbox"
 msgstr "Мой почтовый ящик"
 
-#: src/inbox.tsx:36
+#: src/inbox.tsx:34
+msgid "My Message Inbox Thre"
+msgstr "Мои входящие сообщения Thre"
+
+#: src/inbox.tsx:37
 msgid "My Message Inbox Two"
 msgstr "Мой ящик для входящих сообщений два"
 
-#: src/inbox.tsx:38
+#: src/inbox.tsx:39
 msgid "My super inbox"
 msgstr "Мой супер почтовый ящик"
 
-#: src/inbox.tsx:39
+#: src/inbox.tsx:40
 msgid "My super super inbox"
 msgstr "Мой супер супер почтовый ящик"
 
-#: src/inbox.tsx:121
+#: src/inbox.tsx:122
 msgid "Open"
 msgstr "открыто"
 
@@ -87,7 +95,7 @@ msgstr "красный"
 msgid "Russian"
 msgstr "русский"
 
-#: src/inbox.tsx:43
+#: src/inbox.tsx:44
 msgid "See all <0>unread messages</0>or <1>mark them</1> as read."
 msgstr "Просмотреть все <0>непрочитанные сообщения</0> или <1>отметьте их</1> как прочитано."
 
@@ -95,7 +103,7 @@ msgstr "Просмотреть все <0>непрочитанные сообще
 msgid "Yellow"
 msgstr "Желтый"
 
-#: src/inbox.tsx:53
+#: src/inbox.tsx:54
 msgid "{messagesCount, plural, =0 {There are no messages} one {There's # message in your inbox, {name}} other { There are <0>#</0> messages in your inbox, {name}}}"
 msgstr "{ messagesCount, plural, =0 {Нет сообщений} one {В папке \"Входящие\" есть сообщение #, {name}.} few {Есть <0>#</0> сообщения в папке \"Входящие\", {name}} other {Есть <0>#</0> сообщения в папке \"Входящие\", {name}} }"
 
